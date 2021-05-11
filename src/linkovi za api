@@ -1,0 +1,5 @@
+    const url_movies = "https://api.themoviedb.org/3/search/movie?api_key=ea51221982d56a556eae4bf95cbfc41d&query=";
+    const url_tvshows = "https://api.themoviedb.org/3/search/tv?api_key=ea51221982d56a556eae4bf95cbfc41d&query=";
+    const url_top10movies = "https://api.themoviedb.org/3/tv/top_rated?api_key=ea51221982d56a556eae4bf95cbfc41d&language=en-US&page=1";
+    const url_top10tv = "https://api.themoviedb.org/3/tv/top_rated?api_key=ea51221982d56a556eae4bf95cbfc41d&language=en-US&page=1";  
+    tmdb poster path https://image.tmdb.org/t/p/original
