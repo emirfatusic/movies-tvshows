@@ -21,7 +21,6 @@ const [movieListOnPageLoad, setmovieLIstOnPageLoad] = useState([]);
 const [TVListOnPageLoad, setTVListOnPageLoad] = useState([]);
 const [showSearchBar, setShowSearchBarState] = useState("");
 
-
 useEffect( () => {  
   axios.get(url_top10movies).then(resp => {
     const movieList = resp.data.results;
@@ -50,9 +49,10 @@ useEffect( () => {
       <Switch>
         <Route path = "/" exact component = {TV}/>
         <Route path = "/tv" exact component = {TV}/>
-        <Route path = "/movies-tvshows" exact component = {TV}/>
+        <Route path = "/movies-tvshows/" exact component = {TV}/>
         <Route path = "/movies/*" exact component = {MovieDetails}/>
         <Route path = "/TV/*" exact component = {TVDetails}/>
+        <Route path = "/movies-tvshows/TV/*" exact component = {TVDetails}/>
         <Route path = "/movies" exact component = {Movies}/>
       </Switch>
     </showSearchBarContext.Provider>

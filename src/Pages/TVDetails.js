@@ -15,13 +15,12 @@ export default function TVDetails() {
 
     setLocationURL("tv");
     const [videoURL, setVideoURL] = useState("");
-
+    console.log(location.pathname);
     let movieToDisplay;
     let youTubeKey;
     var hasTrailer = useRef(false);
-
     globalTVList.forEach(element => {
-        if(`/TV/${element.name}` === location.pathname || `/movies-tvshows/TV/${element.name}`){
+        if(`/TV/${element.name}` === location.pathname || `/movies-tvshows/TV/${element.name}` === location.pathname){
             movieToDisplay = element;
         }
     });
